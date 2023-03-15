@@ -4,6 +4,9 @@ lvim.plugins = {
     event = "BufRead",
   },
   {
+    "tpope/vim-fugitive",
+  },
+  {
     "f-person/git-blame.nvim",
     event = "BufRead",
     config = function()
