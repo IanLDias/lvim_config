@@ -28,25 +28,25 @@ lvim.plugins = {
     "tpope/vim-endwise"
   },
   {
-    "tpope/vim-rails",
-    cmd = {
-      "Eview",
-      "Econtroller",
-      "Emodel",
-      "Smodel",
-      "Sview",
-      "Scontroller",
-      "Vmodel",
-      "Vview",
-      "Vcontroller",
-      "Tmodel",
-      "Tview",
-      "Tcontroller",
-      "Rails",
-      "Generate",
-      "Runner",
-      "Extract"
-    }
+    "tpope/vim-rails"
+    -- cmd = {
+    --   "Eview",
+    --   "Econtroller",
+    --   "Emodel",
+    --   "Smodel",
+    --   "Sview",
+    --   "Scontroller",
+    --   "Vmodel",
+    --   "Vview",
+    --   "Vcontroller",
+    --   "Tmodel",
+    --   "Tview",
+    --   "Tcontroller",
+    --   "Rails",
+    --   "Generate",
+    --   "Runner",
+    --   "Extract"
+    -- }
   },
   {
     "vim-ruby/vim-ruby"
@@ -54,5 +54,13 @@ lvim.plugins = {
   {
     "vim-test/vim-test",
     event = "BufRead"
+  },
+  {
+    'iamcco/markdown-preview.nvim'
   }
+}
+
+return {
+  vim_rails = require("user.plugins.vim_rails_config"),
+  markdown_preview = require("user.plugins.markdown_preview_config")
 }
