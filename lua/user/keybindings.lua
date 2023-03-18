@@ -16,6 +16,8 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("i", "jk", "<esc>", { noremap = true, silent = true })
 keymap("i", "kj", "<esc>", { noremap = true, silent = true })
 
+-- lazygit
+keymap("n", "<leader>gg", "<cmd>LazyGit<CR>", { noremap = true, silent = true })
 ---------------------
 -- Which Key bindings
 ---------------------

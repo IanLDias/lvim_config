@@ -60,10 +60,18 @@ lvim.plugins = {
   },
   {
     'iamcco/markdown-preview.nvim'
-  }
+  },
+  {
+    'chentoast/marks.nvim'
+  },
+  {
+    'kdheepak/lazygit.nvim',
+
+  },
 }
 
 return {
   vim_rails = require("user.plugins.vim_rails_config"),
-  markdown_preview = require("user.plugins.markdown_preview_config")
+  markdown_preview = require("user.plugins.markdown_preview_config"),
+  marks = require("user.plugins.marks_config")
 }
